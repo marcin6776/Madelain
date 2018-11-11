@@ -54,6 +54,7 @@ namespace Madelain
             read(testtab, @"D:\Studia\Informatyka\semestr 2\jpad\test.txt", 4);
             read(letters, @"D:\Studia\Informatyka\semestr 2\jpad\litery.txt", 3);
         }
+    
     }
     class Program
     {
