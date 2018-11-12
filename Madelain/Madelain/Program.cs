@@ -7,6 +7,7 @@ using System.IO;
 using System.Data;
 
 
+
 namespace Madelain
 {
     class madelaine
@@ -60,8 +61,15 @@ namespace Madelain
     {
         static void Main(string[] args)
         {
-            madelaine decyzja = new madelaine();
-            decyzja.init();
+            //madelaine decyzja = new madelaine();
+            //decyzja.init();
+            MadalineNeuron neuron = new MadalineNeuron();
+            int[] inn = { 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0 };
+            int[] innTest = { 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0 };
+            neuron.learn(inn);
+            double outt = neuron.Check(innTest);
+            Console.WriteLine(outt);
+            Console.ReadLine();
         }
     }
 }
